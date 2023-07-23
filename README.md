@@ -1,2 +1,2 @@
 # safeagi
-Safe, Agil and AGI
+Safe, Agile, AGI
