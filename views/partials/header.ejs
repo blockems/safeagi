@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/matrix.css">
+<link rel="stylesheet" href="/css/nav.css">
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
+
+<% if (typeof additionalStyles !== 'undefined' && additionalStyles) { %>
+    <% additionalStyles.forEach(function(style) { %>
+        <link rel="stylesheet" href="<%= style %>">
+    <% }); %>
+<% } %>
+
+<% if (typeof additionalScripts !== 'undefined' && additionalScripts) { %>
+    <% additionalScripts.forEach(function(script) { %>
+        <script src="<%= script %>"></script>
+    <% }); %>
+<% } %>
+<title><%title%></title>

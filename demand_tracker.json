@@ -1,0 +1,142 @@
+{
+    "SAFe 6.0 Structure": {
+      "Portfolio Level": {
+        "Strategic Themes": {
+          "1": "Data Security & Privacy",
+          "2": "User Experience Enhancement",
+          "3": "Continuous Feedback & Improvement"
+        },
+        "Portfolio Backlog": {
+          "Epics": {
+            "4": {
+              "name": "Data Infrastructure Establishment",
+              "parent": null
+            },
+            "5": {
+              "name": "Advanced Data Processing & Analysis",
+              "parent": null
+            },
+            "6": {
+              "name": "Decision-making Enhancements",
+              "parent": null
+            },
+            "7": {
+              "name": "Strategic Planning Tools Integration",
+              "parent": null
+            },
+            "8": {
+              "name": "Feedback Mechanisms & Learning Algorithms",
+              "parent": null
+            }
+          }
+        }
+      },
+      "Large Solution Level": {
+        "Solution Backlog": {
+          "Capabilities": {
+            "9": {
+              "name": "Secure Data Collection & Storage",
+              "parent": "4"
+            },
+            "10": {
+              "name": "Data Cleaning & Preliminary Matching",
+              "parent": "5"
+            },
+            "11": {
+              "name": "Opportunity Matching & Profile Sharing",
+              "parent": "6"
+            },
+            "12": {
+              "name": "Rate Determination & Contract Monitoring",
+              "parent": "6"
+            },
+            "13": {
+              "name": "Long-term Demand Forecasting",
+              "parent": "7"
+            },
+            "14": {
+              "name": "Feedback Collection & Analysis",
+              "parent": "8"
+            }
+          }
+        }
+      },
+      "Program Level": {
+        "Program Backlog": {
+          "Features": {
+            "15": {
+              "name": "Build ConsultantDB, OpportunityDB, AccountDB",
+              "parent": "9"
+            },
+            "16": {
+              "name": "Develop Data Cleaning Algorithms",
+              "parent": "10"
+            },
+            "17": {
+              "name": "Develop Preliminary Matching Algorithms",
+              "parent": "10"
+            },
+            "18": {
+              "name": "Develop Opportunity Matching Algorithms",
+              "parent": "11"
+            },
+            "19": {
+              "name": "Implement Rate Determination Algorithms",
+              "parent": "12"
+            },
+            "20": {
+              "name": "Implement Contract Monitoring Systems",
+              "parent": "12"
+            },
+            "21": {
+              "name": "Develop Feedback Collection Mechanisms",
+              "parent": "14"
+            },
+            "22": {
+              "name": "Implement Learning Algorithms",
+              "parent": "14"
+            }
+          }
+        }
+      },
+      "Team Level": {
+        "Team Backlog": {
+          "User Stories": {
+            "23": {
+              "name": "As a user, I want to securely input my data into the system.",
+              "parent": "15"
+            },
+            "24": {
+              "name": "As a manager, I want to see potential matches between consultants and opportunities.",
+              "parent": "18"
+            },
+            "25": {
+              "name": "As a consultant, I want to update my profile with new skills and experiences.",
+              "parent": "15"
+            },
+            "26": {
+              "name": "As a CSG Rep, I want to register new opportunities in the system.",
+              "parent": "15"
+            },
+            "27": {
+              "name": "As a manager, I want to approve or modify the proposed rates for consultants.",
+              "parent": "19"
+            },
+            "28": {
+              "name": "As a manager, I want to monitor consultant contract statuses.",
+              "parent": "20"
+            },
+            "29": {
+              "name": "As a CSG Rep, I want to provide feedback on consultant matches.",
+              "parent": "21"
+            },
+            "30": {
+              "name": "As a consultant, I want the system to learn from feedback and improve match accuracy.",
+              "parent": "22"
+            }
+          }
+        }
+      }
+    }
+  }
+  

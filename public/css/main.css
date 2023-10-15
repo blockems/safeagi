@@ -1,0 +1,218 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #00ff00;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #f5f5f5;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main {
+    flex: 1;
+    min-height: calc(100vh - 120px);
+}
+
+.content {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - [height of your nav]); /* Adjust the subtraction value based on the height of your nav */
+}
+
+.agentSpace {
+    flex: 0 0 15%; /* This means the div will not grow or shrink and will stay at 15% of the parent's width */
+    /* Add any additional styles for the agentSpace div here */
+}
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label, input[type="submit"], p {
+    color: #00FF00; /* Matrix green */
+    font-family: 'MatrixCode', monospace; /* Assuming you have a Matrix-like font */
+}
+
+input[type="email"], input[type="password"] {
+    background-color: #333;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+}
+
+input[type="submit"] {
+    background-color: #009900; /* Darker shade of green */
+    color: black; /* Black text for better contrast */
+    padding: 10px 20px; /* Increased padding for a larger button */
+    font-size: 1rem; /* Adjust font size as needed */
+    border: 1px solid #00FF00; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition for both background and text color */
+}
+
+input[type="submit"]:hover {
+    background-color: #00FF00; /* Lighter green on hover */
+    color: black; /* Black text on hover */
+}
+
+a[href="/signup"] {
+    display: inline-block; /* To apply padding */
+    background-color: black; /* Black background */
+    color: #00FF00; /* Green text */
+    padding: 8px 15px; /* Padding to give it a button-like appearance */
+    border: 2px solid #00FF00; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+a[href="/signup"]:hover {
+    background-color: #00FF00; /* Green background on hover */
+    color: black; /* Black text on hover */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.flashed-messages {
+    background-color: #000;  /* Black background */
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.flashed-messages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flashed-messages li {
+    margin: 5px 0;
+    color: #00DD00; /* or any color you prefer for the message */
+}
+
+/* Floating text*/
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-90vh); /* This moves the text up by the full height of the viewport */
+        opacity: 1; /* Ensure it remains fully visible throughout the floatUp animation */
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.message {
+    position: relative;
+    padding: 10px; /* Adjust the padding as needed for spacing between messages */
+    animation: floatUp 5s forwards, fadeOut 5s 5s forwards; 
+    margin-bottom: 2px;
+}
+
+.messageLog {
+    flex: 0 0 15%;
+    display: flex;
+    flex-direction: column-reverse; /* This will make new messages appear at the bottom */
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+#messageLogList {
+    height: 100%; /* Ensure the <ul> takes up the full height of its container */
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden; /* Hide overflowing content */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    position: relative;
+}
+
+/* working space */
+
+#northBound {
+    flex: 0 0 25%;
+    background-color: transparent;
+}
+
+#playGround {
+    flex: 1; /* This ensures it takes up the remaining space after northBound and southBound have taken their percentages */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#southBound {
+    flex: 0 0 25%;
+    background-color: transparent;
+}

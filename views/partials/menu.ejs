@@ -1,0 +1,21 @@
+<nav>
+    <% if (isAuthenticated) { %>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link<%= (activeTab === '/' ? ' active' : '') %>" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link<%= (activeTab === '/program' ? ' active' : '') %>" href="/program">Program</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link<%= (activeTab === '/set_up' ? ' active' : '') %>" href="/set_up">Set Up</a>
+            </li>
+        </ul>
+    </div>
+    <div class="ml-auto">
+        <img src="/img/avatar.svg" alt="User Avatar" title="<%= username %>">
+        <a class="logout-link" href="/logout">logout</a>
+    </div>
+    <% } %>
+</nav>

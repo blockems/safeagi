@@ -1,0 +1,27 @@
+<h2>Signup</h2>
+<form action="/signup" method="post">
+    <div>
+        <label for="firstname">First Name:</label>
+        <input id="firstname" type="text" name="firstname" required>
+    </div>
+    <div>
+        <label for="lastname">Last Name:</label>
+        <input id="lastname" type="text" name="lastname" required>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" required>
+    </div>
+    <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input id="confirmPassword" type="password" name="confirmPassword" required>
+    </div>
+    <div>
+        <button type="submit">Signup</button>
+    </div>
+</form>
+<p>Already have an account? <a href="/login">Login</a></p>

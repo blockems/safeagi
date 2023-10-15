@@ -1,0 +1,83 @@
+
+#matrixCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.matrix-form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.matrix-form label,
+.matrix-form input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.matrix-form input[type="text"],
+.matrix-form input[type="password"],
+.matrix-form input[type="email"] {
+    padding: 10px;
+    background-color: black;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+}
+
+.matrix-form input[type="submit"] {
+    background-color: black;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.matrix-form input[type="submit"]:hover {
+    background-color: #00FF00;
+    color: black;
+}
+
+.matrix-link {
+    text-decoration: none;
+    color: #00FF00; /* Matrix green */
+    font-family: 'MatrixCode', monospace; /* Assuming you have a Matrix-like font */
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+}
+
+.matrix-link:hover {
+    color: #00DD00; /* Slightly different green for hover */
+}
+
+.logout-link {
+    text-decoration: none !important;
+    color: #00FF00 !important;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;  /* Monospace font for the Matrix feel */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for hover effects */
+    padding: 5px 10px;  /* Padding for a button-like feel */
+    border: 1px solid #00FF00;  /* Matrix green border */
+    border-radius: 5px;  /* Rounded corners */
+    background-color: #000;  /* Black background */
+    display: inline-block;  /* To apply padding and border */
+}
+
+.logout-link:hover {
+    background-color: #00FF00;  /* Matrix green */
+    color: #000;  /* Black text on hover */
+    animation: hoverAnimation 0.5s infinite;
+}
+
+.fading-message {
+    background-color: rgba(0, 0, 0, 0.1); /* This gives a very faint background */
+    transition: opacity 30s ease; /* This will handle the fading effect */
+    opacity: 1;
+}

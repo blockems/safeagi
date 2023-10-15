@@ -1,0 +1,48 @@
+/* General styles for the navbar */
+nav {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;  /* Black background */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    line-height: 1.2;
+}
+
+nav ul li {
+    margin-right: 0;  /* No margin to remove space between tabs */
+}
+
+/* Matrix-themed styles for the menu links */
+nav ul li a {
+    text-decoration: none;
+    color: #00FF00;  /* Matrix green */
+    padding: 5px 15px;
+    font-family: 'Courier New', Courier, monospace;  /* Monospace font for the Matrix feel */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for hover effects */
+    position: relative;
+    top: 1px;
+}
+
+/* Hover and active styles */
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #00FF00;  /* Matrix green */
+    color: #000;  /* Black text on hover */
+}
+
+/* Optional: Add a subtle animation to the hover effect */
+@keyframes hoverAnimation {
+    0% { background-color: #000; color: #00FF00; }
+    50% { background-color: #00FF00; color: #000; }
+    100% { background-color: #000; color: #00FF00; }
+}
+
+nav ul li a:hover {
+    animation: hoverAnimation 0.5s infinite;
+}

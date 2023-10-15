@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header.ejs') %>
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <%- include('partials/menu.ejs') %>
+    
+    <div class="flex-container">
+        <div class="agentSpace">
+            <!-- Left column content (Agent Space) -->
+        </div>
+        <div class="content">
+            <%- include(content) %>
+        </div>
+        <div class="messageLog">
+            <ul id="messageLogList"></ul>
+        </div>
+    </div>
+    <%- include('partials/footer.ejs') %>
+
+    <script src='js/matrix.js'></script>
+    <% if (messages && messages.length > 0) { %>
+    <footer>
+        <div class="flashed-messages">
+            <% messages.forEach(function(message) { %>
+                <p><%= message %></p>
+            <% }); %>
+        </div>
+    </footer>
+    <% } %>
+</body>
+</html>

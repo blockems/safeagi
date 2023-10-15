@@ -1,0 +1,223 @@
+[
+    {
+      "id": 1,
+      "name": "Data Security & Privacy",
+      "category": "Theme",
+      "parent": null,
+      "as_a": null,
+      "i_want_to": null,
+      "so_i_can": null,
+      "ac": null
+    },
+    {
+      "id": 2,
+      "name": "User Experience Enhancement",
+      "category": "Theme",
+      "parent": null,
+      "as_a": null,
+      "i_want_to": null,
+      "so_i_can": null,
+      "ac": null
+    },
+    {
+      "id": 3,
+      "name": "Continuous Feedback & Improvement",
+      "category": "Theme",
+      "parent": null,
+      "as_a": null,
+      "i_want_to": null,
+      "so_i_can": null,
+      "ac": null
+    },
+    {
+      "id": 4,
+      "name": "Data Infrastructure Establishment",
+      "category": "Epic",
+      "parent": 1,
+      "as_a": "system administrator",
+      "i_want_to": "establish a robust data infrastructure",
+      "so_i_can": "ensure secure and efficient data storage and retrieval",
+      "ac": "Data can be securely stored, retrieved, and is resistant to breaches."
+    },
+    {
+      "id": 5,
+      "name": "Advanced Data Processing & Analysis",
+      "category": "Epic",
+      "parent": 2,
+      "as_a": "data analyst",
+      "i_want_to": "process and analyze data using advanced algorithms",
+      "so_i_can": "derive meaningful insights and improve decision-making",
+      "ac": "Data is processed accurately, and insights are generated."
+    },
+    {
+      "id": 6,
+      "name": "Decision-making Enhancements",
+      "category": "Epic",
+      "parent": 3,
+      "as_a": "manager",
+      "i_want_to": "have enhanced decision-making tools",
+      "so_i_can": "make better matches and improve overall efficiency",
+      "ac": "Decision-making tools provide accurate and timely recommendations."
+    },
+    {
+      "id": 7,
+      "name": "Strategic Planning Tools Integration",
+      "category": "Epic",
+      "parent": 2,
+      "as_a": "strategic planner",
+      "i_want_to": "integrate external strategic planning tools",
+      "so_i_can": "forecast future demand and identify strategic opportunities",
+      "ac": "External tools are seamlessly integrated and provide accurate forecasts."
+    },
+    {
+      "id": 8,
+      "name": "Feedback Mechanisms & Learning Algorithms",
+      "category": "Epic",
+      "parent": 3,
+      "as_a": "CSG Rep",
+      "i_want_to": "provide feedback on consultant matches",
+      "so_i_can": "improve the matching process over time",
+      "ac": "Feedback is collected, analyzed, and used to refine the matching algorithm."
+    },
+    {
+      "id": 9,
+      "name": "Secure Data Collection & Storage",
+      "category": "Feature",
+      "parent": 4,
+      "as_a": "user",
+      "i_want_to": "securely input my data into the system",
+      "so_i_can": "ensure my data's privacy and security",
+      "ac": "Data is encrypted, securely stored, and only accessible by authorized personnel."
+    },
+    {
+      "id": 10,
+      "name": "Data Cleaning & Preliminary Matching",
+      "category": "Feature",
+      "parent": 5,
+      "as_a": "data analyst",
+      "i_want_to": "clean and preprocess data",
+      "so_i_can": "ensure its quality and readiness for analysis",
+      "ac": "Data is cleaned, validated, and inconsistencies are handled."
+    },
+    {
+      "id": 11,
+      "name": "Opportunity Matching & Profile Sharing",
+      "category": "Feature",
+      "parent": 6,
+      "as_a": "manager",
+      "i_want_to": "identify potential matches between consultants and opportunities",
+      "so_i_can": "efficiently allocate resources to projects",
+      "ac": "Potential matches are identified and profiles are shared with clients."
+    },
+    {
+      "id": 12,
+      "name": "Rate Determination & Contract Monitoring",
+      "category": "Feature",
+      "parent": 6,
+      "as_a": "manager",
+      "i_want_to": "determine appropriate rates for consultants",
+      "so_i_can": "ensure fair compensation and budget adherence",
+      "ac": "Rates are determined based on market trends, consultant profiles, and historical data."
+    },
+    {
+      "id": 13,
+      "name": "Long-term Demand Forecasting",
+      "category": "Feature",
+      "parent": 7,
+      "as_a": "CSG Rep",
+      "i_want_to": "produce long-term demand estimates",
+      "so_i_can": "aid in strategic planning",
+      "ac": "Demand estimates are accurate and based on historical data and market research."
+    },
+    {
+      "id": 14,
+      "name": "Feedback Collection & Analysis",
+      "category": "Feature",
+      "parent": 8,
+      "as_a": "CSG Rep",
+      "i_want_to": "provide feedback on consultant matches",
+      "so_i_can": "improve the matching process over time",
+      "ac": "Feedback is collected, analyzed, and used to refine the matching algorithm."
+    },
+    {
+      "id": 15,
+      "name": "Build ConsultantDB, OpportunityDB, AccountDB",
+      "category": "Story",
+      "parent": 9,
+      "as_a": "system administrator",
+      "i_want_to": "have a centralized database",
+      "so_i_can": "efficiently manage and retrieve consultant, opportunity, and account data",
+      "ac": "Databases are established, data is stored/retrieved efficiently, and there are no data breaches."
+    },
+    {
+      "id": 16,
+      "name": "Develop Data Cleaning Algorithms",
+      "category": "Story",
+      "parent": 10,
+      "as_a": "data analyst",
+      "i_want_to": "clean and validate data",
+      "so_i_can": "ensure its quality for analysis",
+      "ac": "Data is cleaned, validated, and ready for analysis."
+    },
+    {
+      "id": 17,
+      "name": "Develop Preliminary Matching Algorithms",
+      "category": "Story",
+      "parent": 10,
+      "as_a": "data analyst",
+      "i_want_to": "preliminarily match consultants to opportunities",
+      "so_i_can": "shortlist potential matches for further analysis",
+      "ac": "Potential matches are identified based on preliminary criteria."
+    },
+    {
+      "id": 18,
+      "name": "Develop Opportunity Matching Algorithms",
+      "category": "Story",
+      "parent": 11,
+      "as_a": "manager",
+      "i_want_to": "match consultants to opportunities",
+      "so_i_can": "efficiently allocate resources to projects",
+      "ac": "Consultants are matched to opportunities based on set criteria."
+    },
+    {
+      "id": 19,
+      "name": "Implement Rate Determination Algorithms",
+      "category": "Story",
+      "parent": 12,
+      "as_a": "manager",
+      "i_want_to": "determine rates for consultants",
+      "so_i_can": "ensure fair compensation",
+      "ac": "Rates are determined based on market trends, consultant profiles, and historical data."
+    },
+    {
+      "id": 20,
+      "name": "Implement Contract Monitoring Systems",
+      "category": "Story",
+      "parent": 12,
+      "as_a": "manager",
+      "i_want_to": "monitor consultant contract statuses",
+      "so_i_can": "manage resource allocation and project timelines",
+      "ac": "Contract statuses are monitored, and notifications are sent for nearing end dates or status changes."
+    },
+    {
+      "id": 21,
+      "name": "Develop Feedback Collection Mechanisms",
+      "category": "Story",
+      "parent": 14,
+      "as_a": "CSG Rep",
+      "i_want_to": "provide feedback on consultant matches",
+      "so_i_can": "improve the matching process over time",
+      "ac": "Feedback is collected and stored for analysis."
+    },
+    {
+      "id": 22,
+      "name": "Implement Learning Algorithms",
+      "category": "Story",
+      "parent": 14,
+      "as_a": "system developer",
+      "i_want_to": "refine the matching algorithm",
+      "so_i_can": "improve match accuracy over time",
+      "ac": "Matching algorithm improves over time based on feedback."
+    }
+  ]
+  

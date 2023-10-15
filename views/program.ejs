@@ -1,0 +1,68 @@
+<div id="playGround">
+    <% function getChildren(parentId) { %>
+        <% let children = data.filter(item => item.parent === parentId); %>
+        <% return children; %>
+    <% } %>
+      
+    <div class="table-container">
+        <table class="program-table">
+            <caption>Table for program deliverables</caption>
+            <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>As a...</th>
+                  <th>I want to...</th>
+                  <th>So I can...</th>
+                  <th>Acceptance Criteria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.filter(item => item.category === "Theme").forEach(theme => { %>
+                  <tr class="theme-row" data-type="theme" title="Theme">
+                    <td><%= theme.name %></td>
+                    <td><%= theme.as_a %></td>
+                    <td><%= theme.i_want_to %></td>
+                    <td><%= theme.so_i_can %></td>
+                    <td><%= theme.ac %></td>
+                  </tr>
+                  <% getChildren(theme.id).forEach(epic => { %>
+                    <tr class="epic-row" data-type="epic" title="Epic">
+                      <td><%= epic.name %></td>
+                      <td><%= epic.as_a %></td>
+                      <td><%= epic.i_want_to %></td>
+                      <td><%= epic.so_i_can %></td>
+                      <td><%= epic.ac %></td>
+                    </tr>
+                    <% getChildren(epic.id).forEach(feature => { %>
+                      <tr class="feature-row" data-type="feature" title="Feature">
+                        <td><%= feature.name %></td>
+                        <td><%= feature.as_a %></td>
+                        <td><%= feature.i_want_to %></td>
+                        <td><%= feature.so_i_can %></td>
+                        <td><%= feature.ac %></td>
+                      </tr>
+                      <% getChildren(feature.id).forEach(story => { %>
+                        <tr class="story-row" data-type="story" title="Story">
+                          <td><%= story.name %></td>
+                          <td><%= story.as_a %></td>
+                          <td><%= story.i_want_to %></td>
+                          <td><%= story.so_i_can %></td>
+                          <td><%= story.ac %></td>
+                        </tr>
+                        <% getChildren(story.id).forEach(task => { %>
+                          <tr class="task-row" data-type="task" title="Task">
+                            <td><%= task.name %></td>
+                            <td><%= task.as_a %></td>
+                            <td><%= task.i_want_to %></td>
+                            <td><%= task.so_i_can %></td>
+                            <td><%= task.ac %></td>
+                          </tr>
+                        <% }); %>
+                      <% }); %>
+                    <% }); %>
+                  <% }); %>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>    
+</div>
